@@ -23,7 +23,7 @@ credentials = Credentials.from_service_account_info(credentials_info, scopes=['h
 drive_service = build('drive', 'v3', credentials=credentials)
 
 # Google Drive mappa azonosítója
-DRIVE_FOLDER_ID = '<1YD6rjJmPjEXsjuWudNzTIF0p-g3zuT88?usp=sharing>'  # Cseréld ki a saját mappa azonosítódra!
+DRIVE_FOLDER_ID = '<1YD6rjJmPjEXsjuWudNzTIF0p-g3zuT88>'  # Cseréld ki a saját mappa azonosítódra!
 
 
 # Főoldal (feltöltési űrlap)
