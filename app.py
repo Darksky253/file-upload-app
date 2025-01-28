@@ -26,6 +26,11 @@ def home():
     </html>
     '''
 
+@app.route('/files/<filename>')
+def download_file(filename):
+    # Letöltési viselkedés aktiválása
+    return send_from_directory(app.config['UPLOAD_FOLDER'], filename, as_attachment=True)
+
 @app.route('/upload', methods=['POST'])
 def upload_file():
     if 'file' not in request.files:
